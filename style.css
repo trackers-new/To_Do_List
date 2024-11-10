@@ -1,0 +1,139 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    overflow: auto;
+    font-size: 1rem;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #a1c398;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+  
+}
+
+.layout {
+    width: 100%;
+    height: 100vh;
+    background-color:#fef3e2 ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px; 
+    padding: 20px;
+    background-color: #fa7070;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+}
+
+.inputfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ip {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #c6ebc5;
+    font-size: 1rem;
+}
+
+#btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#listcontainer {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: -50px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    border-radius: 10px;
+    background-color: #fefded;
+    color: black;
+}
+
+#listcontainer button {
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+@media (max-width: 518px) {
+    .main {
+        width: 300px;
+        font-size: 18px;
+        display: flex;
+    }
+    #ip{
+      position: relative;
+      top:5px;
+      width:200px;
+      padding:5px;
+    }
+    li{
+     width:100%;
+    }
+
+}
+@media (min-width:519px) {
+
+    .main {
+        width: 500px;
+        height: 500px;
+        font-size: 32px;
+        display: flex;
+    }
+    #ip{
+      position: relative;
+      top:5px;
+      width:300px;
+      padding:25px;
+      
+    }
+    li{
+     width:100%;
+     font-size: 25px;
+    }
+    
+}
